@@ -78,6 +78,7 @@ providedBroadcastChannel) {
     if (closed) {
       return;
     }
+    eventBulk = JSON.parse(JSON.stringify(eventBulk));
     broadcastChannel.postMessage({
       storageName: storageName,
       databaseName: instanceCreationParams.databaseName,
