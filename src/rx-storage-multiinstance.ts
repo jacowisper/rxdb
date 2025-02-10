@@ -143,7 +143,7 @@ export function addRxStorageMultiInstanceSupport<RxDocType>(
         if (closed) {
             return;
         }
-        eventBulk = JSON.parse(JSON.stringify(eventBulk))
+        eventBulk = JSON.parse(JSON.stringify(eventBulk));
         broadcastChannel.postMessage({
             storageName: storageName,
             databaseName: instanceCreationParams.databaseName,
